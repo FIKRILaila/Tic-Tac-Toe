@@ -1,0 +1,20 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Multiplayer Tic Tac Toe App",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"npm run dev --prefix server",
+    "client":"npm start --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FIKRILaila/Tic-Tac-Toe.git"
+  },
+  "author": "Fikri Laila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FIKRILaila/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/FIKRILaila/Tic-Tac-Toe#readme"
+}
