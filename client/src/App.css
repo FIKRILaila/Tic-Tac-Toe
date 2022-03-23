@@ -8,8 +8,8 @@
 .square {
   height: 100px;
   flex: 0 0 32%;
-  border: 1px solid lightgrey;
-  margin-bottom: 5px;
+  /* border: 1px solid lightgrey; */
+  /* margin-bottom: 5px; */
 }
 
 .square-item {

@@ -3,12 +3,12 @@ import React from 'react';
 const Square = ({ value, onClick, canPlay, enabled, isWinnerSquare }) => {
   const canSelect = !value && enabled && canPlay;
   const btnClassName = canSelect ? '' : 'disabled';
-  const winningClass = isWinnerSquare ? 'square-win' : '';
+  const winningClass = isWinnerSquare ? 'bg-info text-dark' : '';
   return (
-    <div className={`square ${winningClass}`}>
+    <div className={`square bg-light rounded shadow mb-2 ${winningClass}`}>
       <button
         onClick={onClick}
-        className={`square-item ${btnClassName}`}
+        className={`square-item btn ${btnClassName}`}
         disabled={!canSelect}
       >
         {value}
