@@ -1,4 +1,6 @@
-# Tick Tac Toe
+
+# Tic Tac Toe
+![Capture d’écran (9)](https://user-images.githubusercontent.com/77831678/159875185-dff361f3-85f2-45c9-a54c-c08aa65a1edb.png)
 
 ## Getting Started
 
