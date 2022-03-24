@@ -5,13 +5,13 @@
 - Clone the Repo
 
 ```
-git clone git@github.com:abolkog/tic-tac-toe-online.git
+git clone https://github.com/FIKRILaila/Tic-Tac-Toe.git
 ```
 
 - Install the dependencies
 
 ```
-cd tic-tac-toe-online
+cd Tic-Tac-Toe
 npm install
 ```
 
