@@ -2,7 +2,11 @@ const http = require('http');
 const socketIO = require('socket.io');
 
 const server = http.createServer();
-const io = socketIO(server);
+const io = socketIO(server, {
+  cors: {
+    origin: '*',
+  },
+})
 
 const { makeKey, checkWinner } = require('./util');
 const { createGame, getGame, updateGame } = require('./data/games');
@@ -76,8 +80,13 @@ io.on('connection', socket => {
     const { player, square, gameId } = data;
     // Get the game
     const game = getGame(gameId);
-    // FIXME: check if game is valid and move is valid
-
+    //check if game is valid and move is valid
+    if (!game) {
+      socket.emit('notification', {
+        message: 'Invalid game id',
+      });
+      return;
+    }
     // update the board
     const { playBoard = [], playerTurn, player1, player2 } = game;
     playBoard[square] = player.symbol;

@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h3 className = "border border-info border-2 p-4 text-center rounded shadow-sm mt-4 mb-4">Multiplayer X-O</h3>
+      <h3 className = "border border-info border-2 p-4 text-center rounded shadow-sm mt-4 mb-4">Tic Tac Toe</h3>
       {!showGame && (
         <>
           <CreateGame onFormSubmit={onFormSubmit} />
